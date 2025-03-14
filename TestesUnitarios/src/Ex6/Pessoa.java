@@ -11,6 +11,11 @@ public class Pessoa {
     }
 
     public String gerarNome(){
-        return "";
+        return sobrenome.substring(0, 1).toUpperCase() +
+                (sobrenome.substring(1, 3) +
+                nome.substring(0, 2) +
+                " " +
+                sobrenomeMae.substring(0, 2) +
+                cidade.substring(0, 3)).toLowerCase();
     }
 }
