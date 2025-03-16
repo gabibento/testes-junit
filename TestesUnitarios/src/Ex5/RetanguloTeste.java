@@ -9,29 +9,29 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class RetanguloTeste {
+ public class RetanguloTeste {
     @Test
-    public void calcularAreaTeste(){
+     void calcularAreaTeste(){
         Retangulo retangulo = new Retangulo(2, 4);
         assertEquals(8, retangulo.calcularArea(), 0.1);
     }
     @Test
-    public void calcularAreaExceptionTeste(){
+     void calcularAreaExceptionTeste(){
         Retangulo retangulo = new Retangulo(-2, 4);
         assertThrows(IllegalArgumentException.class, retangulo::calcularArea);
     }
     @Test
-    public void calcularPerimetroTeste(){
+     void calcularPerimetroTeste(){
         Retangulo retangulo = new Retangulo(2, 4);
         assertEquals(8, retangulo.calcularArea(), 0.1);
     }
     @Test
-    public void calcularPerimetroExceptionTeste(){
+     void calcularPerimetroExceptionTeste(){
         Retangulo retangulo = new Retangulo(2, -4);
         assertThrows(IllegalArgumentException.class, retangulo::calcularPerimetro);
     }
     @Test
-    public void calcularMaiorAreaTeste(){
+     void calcularMaiorAreaTeste(){
         List<Retangulo> lista = new ArrayList<>();
         Retangulo retangulo1 = new Retangulo(2, 4);
         Retangulo retangulo2 = new Retangulo(3, 5);
@@ -44,13 +44,13 @@ public class RetanguloTeste {
 
     }
     @Test
-    public void calcularMaiorAreaException(){
+     void calcularMaiorAreaException(){
         List<Retangulo> lista = new ArrayList<>();
         assertThrows(IllegalArgumentException.class, () -> Retangulo.calcularMaiorArea(lista));
     }
 
     @Test
-    public void calcularMaiorPerimetroTeste(){
+     void calcularMaiorPerimetroTeste(){
         List<Retangulo> lista = new ArrayList<>();
         Retangulo retangulo1 = new Retangulo(2, 4);
         Retangulo retangulo2 = new Retangulo(3, 5);
@@ -63,7 +63,7 @@ public class RetanguloTeste {
 
     }
     @Test
-    public void calcularMaiorPerimetroException(){
+     void calcularMaiorPerimetroException(){
         List<Retangulo> lista = new ArrayList<>();
         assertThrows(IllegalArgumentException.class, () -> Retangulo.calcularMaiorArea(lista));
     }

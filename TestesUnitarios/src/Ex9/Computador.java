@@ -1,9 +1,9 @@
 package Ex9;
 
 public abstract class Computador {
-    private String modelo;
-    private double ram;
-    private double armazenamento;
+    protected String modelo;
+    protected double ram;
+    protected double armazenamento;
 
     public Computador(String modelo, double ram, double armazenamento) {
         this.modelo = modelo;
@@ -16,27 +16,4 @@ public abstract class Computador {
 
     abstract boolean rodarAplicacao(String aplicacao);
 
-    public String getModelo() {
-        return modelo;
-    }
-
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
-    public double getRam() {
-        return ram;
-    }
-
-    public void setRam(double ram) {
-        this.ram = ram;
-    }
-
-    public double getArmazenamento() {
-        return armazenamento;
-    }
-
-    public void setArmazenamento(double armazenamento) {
-        this.armazenamento = armazenamento;
-    }
 }

@@ -1,23 +1,22 @@
 package Ex4;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import static org.junit.Assert.assertEquals;
-
-public class AtletaTeste {
+ public class AtletaTeste {
 
     @Test
-    public void categorizarTeste(){
+     void categorizarTeste(){
         Atleta atleta = new Atleta(18, 167, 65);
         assertEquals("Juvenil", atleta.categorizar());
     }
     @Test
-    public void calcularIMCTeste(){
+     void calcularIMCTeste(){
         Atleta atleta = new Atleta(18, 1.67, 65);
         assertEquals(23.30, atleta.calcularIMC(), 0.1);
     }
     @Test
-    public void classificarIMCTeste(){
+     void classificarIMCTeste(){
         Atleta atleta = new Atleta(18, 1.67, 65);
         assertEquals("Saudável", atleta.classificarIMC(atleta.calcularIMC()));
     }

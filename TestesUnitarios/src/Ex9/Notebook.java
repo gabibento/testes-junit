@@ -8,7 +8,7 @@
             this.peso = peso;
         }
         public void aumentarRam(double ram){
-            setRam(getRam() + ram);
+            this.ram += ram;
         }
 
         @Override

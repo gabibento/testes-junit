@@ -16,6 +16,6 @@ public class NotebookTeste {
     void testAumentarRam() {
         Notebook notebook = new Notebook("Dell", 16, 512, 1.2);
         notebook.aumentarRam(8);
-        assertEquals(24, notebook.getRam());
+        assertEquals(24, notebook.ram);
     }
 }
