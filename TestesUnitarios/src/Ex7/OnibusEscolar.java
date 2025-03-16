@@ -5,7 +5,7 @@ public class OnibusEscolar {
     private int quantidadeAlunos;
     private int quantidadeProfessores;
 
-public OnibusEscolar() {
+    public OnibusEscolar() {
     }
 
     public int getQuantidadeVagas() {
@@ -24,7 +24,7 @@ public OnibusEscolar() {
         if (quantidadeAlunos > (quantidadeVagas - quantidadeProfessores)) {
             quantidadeAlunos = quantidadeVagas - quantidadeProfessores;
         }
-        if(quantidadeProfessores == 0) quantidadeAlunos = 0;
+        if (quantidadeProfessores == 0) quantidadeAlunos = 0;
 
         this.quantidadeAlunos = quantidadeAlunos;
     }
@@ -36,11 +36,12 @@ public OnibusEscolar() {
     public void setQuantidadeProfessores(int quantidadeProfessores) {
         this.quantidadeProfessores = quantidadeProfessores;
     }
-    public void removerAlunos(int quantidade){
-        if(quantidade <= quantidadeAlunos){
+
+    public void removerAlunos(int quantidade) {
+        if (quantidade <= quantidadeAlunos) {
             quantidadeAlunos -= quantidade;
-        }else{
-    quantidadeAlunos = 0;
+        } else {
+            quantidadeAlunos = 0;
         }
     }
 }
